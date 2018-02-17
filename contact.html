@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Hello, world!</title>    
     
     <!-- Optional JavaScript -->
@@ -16,42 +16,92 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <h1>Hello, world!</h1>
-    
+    <!--Header-->
+    <div class="container d-flex mr-auto ml-auto border border-danger w-75">
         <!-- Content here -->
-        <div class="container">
-            
-            <div class="row border border-primary">
-              <div class="col-sm">
-                One of three columns
-              </div>
-            
-              <div class="col-sm">
-                One of three columns
-              </div>
-            
-              <div class="col-sm">
-                One of three columns
-              </div>
+        
+        <div class="container ml-auto bg-danger text-white text-center">
+            <!-- Content here -->
+            <h1>Benjamin Miller</h1>
+          </div>
+          
+          <div class="container d-flex flex-row-reverse align-self-center">
+            <!-- Content here -->
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Index</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+          </div>
+    </div>
     
-              <div class="col-sm">
-                One of three columns
-              </div>
-
-              <div class="col-sm">
-                One of three columns
-              </div>
-
-              <div class="col-sm">
-                One of three columns
-              </div>
+    <!--Main-->
+    <div class="container d-flex mt-5 w-75">
+        <!-- Content here -->
+    <!--article-->
+    <div class="container">
+        <div class="container border border-danger">
+            <h2 class="text-danger">Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>                
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
             </div>
-         </div>
-     
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            
+            <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-danger">Submit</button>
+                    </div>
+                  </div>
+        </form>
+            
+        </div>
+
+    </div>
+
+    <!--contact-->
+    
+    <div class="container border border-danger text-center w-25 h-25 text-danger">
+        <h4>Connect with Me</h4>
+        <ul class="nav">
+            <li class="nav-item mx-auto">
+            <a class="nav-link active" href="http://www.linkedin.com/benjamin1"><img class="rounded h-25 w-25" src="assets/images/linkedin.png"></a>
+            </li>
+            <li class="nav-item mx-auto">
+                <a class="nav-link active" href="http://www."><img class="rounded h-25 w-25" src="assets/images/github.png"></a>
+            </li>
+            <li class="nav-item mx-auto">
+                <a class="nav-link active" href="http://www."><img class="rounded h-25 w-25" src="assets/images/stackoverflow.png"></a>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+    
 
 
 
+
+    <!--Footer-->
+    <div class="container bg-danger text-white mt-5 mb-0 text-center w-75">
+        <!-- Content here -->
+        <h7>@ Copyright Benjamin Miller 2018</h7>
+    </div>
 </body>
 </html>
